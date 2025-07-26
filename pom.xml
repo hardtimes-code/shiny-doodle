@@ -1,17 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.hardtimes.universe</groupId>
   <artifactId>shiny-doodle</artifactId>
   <version>1.0.0</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
-  <name>Shiny Doodle</name>
-  <description>Procedural simulation integrating orbital mechanics and solar dynamics</description>
+  <name>Shiny Doodle Parent</name>
+  <description>Parent project for solar simulation modules</description>
   <url>https://github.com/hardtimes-code/shiny-doodle</url>
+
+  <modules>
+    <module>ui</module> <!-- Add other modules here later -->
+  </modules>
 
   <distributionManagement>
     <repository>
@@ -20,3 +23,4 @@
     </repository>
   </distributionManagement>
 </project>
+
